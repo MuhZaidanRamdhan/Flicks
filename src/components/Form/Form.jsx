@@ -1,9 +1,13 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import styles from "./Form.module.css";
 import { nanoid } from "nanoid";
+import Button from "../ui/Button";
+import MoviesContext from "../../Context/MoviesContext";
 
-function Form(props) {
-  const { movies, setMovies } = props;
+function Form() {
+ 
+
+  const {movies, setMovies} = useContext(MoviesContext)
 
   const [formData, setFormData] = useState({
     title: "",
@@ -75,7 +79,7 @@ function Form(props) {
       <section className={styles.forms}>
         <div className={styles.forms__left}>
           <img
-            src="https://m.media-amazon.com/images/M/MV5BOGFjYWNkMTMtMTg1ZC00Y2I4LTg0ZTYtN2ZlMzI4MGQwNzg4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg"
+            src="https://i.pinimg.com/564x/e2/00/93/e20093e20edd706f7718a18fdc62ef2a.jpg"
             alt="placeholder"
             className={styles.form__image}
           />
@@ -97,7 +101,7 @@ function Form(props) {
                 onChange={handleChange}
                 className={styles.form__input}
               />
-              {isTitleError ? <p>Title wajib diisi</p> : ""}
+              {isTitleError ? <p className={styles.error_message}>Title wajib diisi</p> : ""}
 
               <label htmlFor="year" className={styles.form__label}>
                 Year
@@ -110,7 +114,7 @@ function Form(props) {
                 value={date}
                 className={styles.form__input}
               />
-              {isDateError ? <p>Date wajib diisi</p> : ""}
+              {isDateError ? <p className={styles.error_message}>Date wajib diisi</p> : ""}
               <label htmlFor="poster" className={styles.form__label}>
                 Poster
               </label>
@@ -122,7 +126,7 @@ function Form(props) {
                 value={poster}
                 className={styles.form__input}
               />
-              {isPosterError ? <p>Poster wajib diisi</p> : ""}
+              {isPosterError ? <p className={styles.error_message}>Poster wajib diisi</p> : ""}
               <label htmlFor="type" className={styles.form__label}>
                 Type
               </label>
@@ -138,8 +142,8 @@ function Form(props) {
                 <option value="Drama">Drama</option>
                 <option value="Comedy">Comedy</option>
               </select>
-              {isTypeError ? <p>Type wajib diisi</p> : ""}
-              <button className={styles.form__button}>Submit</button>
+              {isTypeError ? <p className={styles.error_message}>Type wajib diisi</p> : ""}
+              <Button size="md">Submit</Button>
             </div>
           </form>
         </div>

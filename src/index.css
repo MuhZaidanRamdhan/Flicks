@@ -2,10 +2,17 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Sharp Grotesk', sans-serif;
+}
+
+@font-face {
+  font-family: 'Sharp Grotesk';
+  src: url('../public/Sharp_Grotesk/SharpGrotesk-Medium20.otf') format('otf2'),
+       url('../public/Sharp_Grotesk/SharpGrotesk-Medium20.otf') format('woff');
 }
 
 body {
-  background-color: rgb(20, 20, 20);
-  color: #fff;
+  /* background-color: #141414; */
+  background-color: rgb(255, 255, 255);
+  color: #141414;
 }

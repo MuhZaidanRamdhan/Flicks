@@ -1,10 +1,13 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Movie from "../Movie/Movie";
 import styles from "./Movies.module.css";
 import { nanoid } from "nanoid";
+import Button from "../ui/Button";
+import MoviesContext from "../../Context/MoviesContext";
 
-function Movies(props) {
-  const { movies, setMovies } = props;
+function Movies({title = "Latest"}) {
+
+  const {movies, setMovies} = useContext(MoviesContext);
 
   function handleClick() {
     const newMovies = {
@@ -23,20 +26,21 @@ function Movies(props) {
       <section className={styles.movies}>
         <div className={styles.title__button}>
           <h3 className={styles.movies__title}>
-            Latest <span>Movies</span>
+            {title} <span>Movies</span>
           </h3>
-          <button onClick={handleClick} className={styles.addMovie}>
-            Add Movie
-          </button>
+          {/* {title === "Latest" ? 
+          <Button onClick={handleClick} size="sm">Add Movie</Button>: ""} */}
         </div>
         <div className={styles.movie__container}>
           {movies.map((movie) => {
             return (
               <Movie
+                movie={movie}
                 key={movie.id}
                 image={movie.poster}
                 title={movie.title}
                 date={movie.year}
+                rated={movie.vote_average}
               />
             );
           })}
