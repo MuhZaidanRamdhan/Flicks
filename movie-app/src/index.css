@@ -7,8 +7,8 @@
 
 @font-face {
   font-family: 'Sharp Grotesk';
-  src: url('../public/Sharp_Grotesk/SharpGrotesk-Medium20.otf') format('otf2'),
-       url('../public/Sharp_Grotesk/SharpGrotesk-Medium20.otf') format('woff');
+  src: url('../src/assets/Sharp_Grotesk/SharpGrotesk-Medium20.otf') format('otf2'),
+       url('../src/assets/Sharp_Grotesk/SharpGrotesk-Medium20.otf') format('woff');
 }
 
 body {

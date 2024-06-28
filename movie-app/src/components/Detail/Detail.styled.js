@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledDetail = styled.div`
-  margin: 6rem 0 1rem;
+  margin:6rem 0 10rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -53,7 +53,6 @@ const StyledDetail = styled.div`
   }
 
   p {
-    text-align: justify;
     margin-bottom: 2rem;
     text-shadow:0 10px 15px rgba(0, 0, 0, 0.2);
   }

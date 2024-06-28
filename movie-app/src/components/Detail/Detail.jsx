@@ -33,10 +33,10 @@ function DetailMovie() {
       </div>
       <div className="info">
         <h1>{title}</h1>
-        <h2>Genre: {genres}</h2>
+        <h2>{genres}</h2>
         <h3>Rating: {rating}</h3>
         <p>{overview}</p>
-        <Button as="a" href={trailer} size="md" target="_blank">
+        <Button as="a" href={trailer} size="sm" target="_blank">
         ▶ Watch Now!
         </Button>
       </div>

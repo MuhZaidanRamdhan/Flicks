@@ -158,7 +158,6 @@ const StyledNavbarSide = styled.nav`
 
 const NavbarBrandSide = styled.h1`
   font-size: 2.4rem;
-  margin-left: 0.5rem;
   margin-bottom: 1rem;
   background: rgb(238, 174, 202);
   background: linear-gradient(
@@ -180,6 +179,7 @@ const NavbarListSide = styled.ul`
   display: flex;
   flex-direction: column;
   list-style: none;
+  width: 100%;
 `;
 
 const NavbarItemSide = styled(Link)`
@@ -187,7 +187,8 @@ const NavbarItemSide = styled(Link)`
   text-decoration: none;
   transition: all 200ms;
   cursor: pointer;
-  margin: 0.8rem;
+  margin: 0.5rem;
+  padding: 0.3rem;
   width: 100%;
 
   &:focus {

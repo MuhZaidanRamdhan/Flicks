@@ -23,36 +23,40 @@ const StyledMovie = styled.div`
   }
 
   .rating p {
+    display:flex;
+    align-items: center;
+    justify-content: end;
+    padding:0 0.2rem 0.2rem;
     position: absolute;
     top: 0;
     right: 0;
     opacity: 1;
     width: 4rem;
+    font-size:1.1rem;
     text-align: right;
-    height: 2rem;
     border-radius: 0 15px 0 15px;
     background-color: rgba(0, 0, 0, 0.500);
     
     color: #fff;
   }
 
-  .overlay {
-    border-radius: 15px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 16rem;
-    height: auto;
-    opacity: 0;
-    transition: 0.5s ease;
-    background-color: rgba(0, 0, 0, 0.7);
-  }
+  // .overlay {
+  //   border-radius: 15px;
+  //   position: absolute;
+  //   top: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   right: 0;
+  //   width: 16rem;
+  //   height: auto;
+  //   opacity: 0;
+  //   transition: 0.5s ease;
+  //   background-color: rgba(0, 0, 0, 0.7);
+  // }
 
-  .container-image:hover .overlay {
-    opacity: 1;
-  }
+  // .container-image:hover .overlay {
+  //   opacity: 1;
+  // }
 
   .play {
     color: white;

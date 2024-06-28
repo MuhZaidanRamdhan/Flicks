@@ -25,7 +25,7 @@ const StyledHero = styled.section`
 `;
 
 const HeroLeft = styled.div`
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 
   @media screen and (min-width: 992px) {
     flex-basis: 50%;
@@ -34,6 +34,7 @@ const HeroLeft = styled.div`
 `;
 
 const HeroTitle = styled.h2`
+  margin-top:1rem;
   background: rgb(238, 174, 202);
   background: linear-gradient(
     69deg,
