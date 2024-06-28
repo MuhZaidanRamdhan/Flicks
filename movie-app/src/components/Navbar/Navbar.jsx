@@ -13,6 +13,7 @@ import {
   NavbarListSide,
   NavbarAuthSide,
   NavbarItemSide,
+  NavbarItemAuthSide,
 } from "./Navbar.styled";
 
 function Navbar() {
@@ -39,8 +40,8 @@ function Navbar() {
           <NavbarItem to="/movie/top">Top Rated</NavbarItem>
         </NavbarList>
         <NavbarAuth>
-          <NavbarItem to="">Sign in</NavbarItem>
-          <NavbarItem to="">Sign up</NavbarItem>
+          <NavbarItemAuthSide to="">Sign in</NavbarItemAuthSide>
+          <NavbarItemAuthSide to="">Sign up</NavbarItemAuthSide>
         </NavbarAuth>
         <NavbarItemToogleMenu onClick={showSidebar}>
           <svg
@@ -72,8 +73,8 @@ function Navbar() {
             <NavbarItemSide to="/movie/top">Top Rated</NavbarItemSide>
           </NavbarListSide>
           <NavbarAuthSide>
-            <NavbarItemSide to="">Sign in</NavbarItemSide>
-            <NavbarItemSide to="">Sign up</NavbarItemSide>
+            <NavbarItemAuthSide to="">Sign in</NavbarItemAuthSide>
+            <NavbarItemAuthSide to="">Sign up</NavbarItemAuthSide>
           </NavbarAuthSide>
         </StyledNavbarSide>
       )}

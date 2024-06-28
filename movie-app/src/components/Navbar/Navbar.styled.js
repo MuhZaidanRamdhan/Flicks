@@ -126,13 +126,16 @@ const NavbarItemToogleClose = styled.svg`
 `;
 
 const NavbarAuth = styled.ul`
-  display: flex;
+  display: none;
   flex-direction: column;
   list-style: none;
   text-align: center;
 
   @media (min-width: 768px) {
     flex-direction: row;
+  }
+    @media (min-width: 992px) {
+    display: block;
   }
 `;
 
@@ -213,6 +216,37 @@ const NavbarItemSide = styled(Link)`
     -webkit-text-fill-color: transparent;
   }
 `;
+const NavbarItemAuthSide = styled(Link)`
+  color: #141414;
+  text-decoration: none;
+  transition: all 200ms;
+  cursor: not-allowed;
+  margin: 0.5rem;
+  padding: 0.3rem;
+  width: 100%;
+
+  &:focus {
+    background: rgb(238, 174, 202);
+    background: linear-gradient(
+      11deg,
+      rgba(238, 174, 202, 1) 0%,
+      rgba(148, 187, 233, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &:hover {
+    background: rgb(238, 174, 202);
+    background: linear-gradient(
+      11deg,
+      rgba(238, 174, 202, 1) 0%,
+      rgba(148, 187, 233, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+`;
 
 const NavbarAuthSide = styled.ul`
   display: flex;
@@ -234,4 +268,5 @@ export {
   NavbarListSide,
   NavbarAuthSide,
   NavbarItemSide,
+  NavbarItemAuthSide
 };
