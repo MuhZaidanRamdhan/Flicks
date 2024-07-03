@@ -40,23 +40,23 @@ const StyledMovie = styled.div`
     color: #fff;
   }
 
-  // .overlay {
-  //   border-radius: 15px;
-  //   position: absolute;
-  //   top: 0;
-  //   bottom: 0;
-  //   left: 0;
-  //   right: 0;
-  //   width: 16rem;
-  //   height: auto;
-  //   opacity: 0;
-  //   transition: 0.5s ease;
-  //   background-color: rgba(0, 0, 0, 0.7);
-  // }
+  .overlay {
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 16rem;
+    height: auto;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
 
-  // .container-image:hover .overlay {
-  //   opacity: 1;
-  // }
+  .container-image:hover .overlay {
+    opacity: 1;
+  }
 
   .play {
     color: white;
